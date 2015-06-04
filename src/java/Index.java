@@ -26,7 +26,7 @@ public class Index extends HttpServlet {
                     "        <h2>Elije que deseas hacer</h2>\n" +
                     "        <a href=\"CrearUsuario\">Crear un nuevo registro</a>\n" +
                     "        <a href=\"CrearUsuario\">Modificar el registro actual</a>\n" +
-                    "        <a href=\"CrearUsuario\">Eliminar el registro actual</a>\n" +
+                    "        <a href=\"BorrarUsuario\">Eliminar el registro actual</a>\n" +
                     "        <a href=\"BuscarUsuario\">Buscar un registro</a>\n" +
                     "    </body>\n" +
                     "</html>");

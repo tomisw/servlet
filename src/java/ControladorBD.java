@@ -1,7 +1,7 @@
 import java.sql.*;
 public class ControladorBD {
     String driver="com.mysql.jdbc.Driver";
-    String url="jdbc:mysql://192.168.117.1:3306";
+    String url="jdbc:mysql://localhost:3306";
     Connection con=null;
     Statement stmt;
     ControladorBD(){

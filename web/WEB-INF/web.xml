@@ -12,6 +12,10 @@
         <servlet-name>BuscarUsuario</servlet-name>
         <servlet-class>BuscarUsuario</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>BorrarUsuario</servlet-name>
+        <servlet-class>BorrarUsuario</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CrearUsuario</servlet-name>
         <url-pattern>/CrearUsuario</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>BuscarUsuario</servlet-name>
         <url-pattern>/BuscarUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BorrarUsuario</servlet-name>
+        <url-pattern>/BorrarUsuario</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

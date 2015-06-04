@@ -18,24 +18,24 @@ public class BuscarUsuario extends HttpServlet {
             out.println("<table>\n" +
                 "          <tr>\n" +
                 "              <td>Por nombre :</td>\n" +
-                "              <td><input type=\"text\" name=\"nombre\" size=\"25\"</td>\n" +
+                "              <td><input type=\"text\" name=\"nombre\" size=\"25\"></td>\n" +
                 "          </tr>\n" +
                 "          <tr>\n" +
                 "              <td>Por email:</td>\n" +
-                "              <td><input type=\"text\" name=\"email\" size=\"20\"</td>\n" +
+                "              <td><input type=\"text\" name=\"email\" size=\"20\"></td>\n" +
                 "          </tr>\n" +
                 "          <tr>\n" +
                 "              <td>Por teléfono:</td>\n" +
-                "              <td><input type=\"text\" name=\"tel\" size=\"20\"</td>\n" +
+                "              <td><input type=\"text\" name=\"tel\" size=\"20\"></td>\n" +
                 "          </tr>\n" +
                 "          <tr>\n" +
                 "              <td>Por edad:</td>\n" +
-                "              <td><input type=\"text\" name=\"edad\" size=\"20\"</td>\n" +
+                "              <td><input type=\"text\" name=\"edad\" size=\"20\"></td>\n" +
                 "          </tr>\n" +
                 "      </table>");
             out.println("<input type=\"submit\" value=\"Enviar\">");
             out.println("<input type=\"reset\" value=\"Borrar\">");
-            out.println("<a href=\"CrearUsuario\">Volver</a>");
+            out.println("<a href=\"index.html\">Volver</a>");
             out.println("</form>");
             out.println("</body>");
             out.println("</html>");
@@ -92,7 +92,7 @@ public class BuscarUsuario extends HttpServlet {
     public void init()  throws ServletException {
         bd = new ControladorBD();
     }
-    private String crearSentencia(String[] s){
+    public static String crearSentencia(String[] s){
         String select="SELECT * FROM USUARIOS";
         int cont=0;
         
@@ -128,7 +128,7 @@ public class BuscarUsuario extends HttpServlet {
         }
         return select;
     }
-    private String[][] extraerDatos(ResultSet query){
+    public static String[][] extraerDatos(ResultSet query){
         String aux[][];
         if(query!=null){
             try{

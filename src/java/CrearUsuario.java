@@ -92,27 +92,27 @@ public class CrearUsuario extends HttpServlet{
             out.println("<table>\n" +
                 "          <tr>\n" +
                 "              <td>Introduce tu nombre :</td>\n" +
-                "              <td><input type=\"text\" name=\"nombre\" size=\"25\"</td>\n" +
+                "              <td><input type=\"text\" name=\"nombre\" size=\"25\"></td>\n" +
                 "          </tr>\n" +
                 "          <tr>\n" +
                 "              <td>Introduce tu email:</td>\n" +
-                "              <td><input type=\"text\" name=\"email\" size=\"20\"</td>\n" +
+                "              <td><input type=\"text\" name=\"email\" size=\"20\"></td>\n" +
                 "          </tr>\n" +
                 "          <tr>\n" +
                 "              <td>Introduce tu contraseña:</td>\n" +
-                "              <td><input type=\"text\" name=\"con\" size=\"20\"</td>\n" +
+                "              <td><input type=\"text\" name=\"con\" size=\"20\"></td>\n" +
                 "          </tr>\n" +
                 "          <tr>\n" +
                 "              <td>Repite tu contraseña:</td>\n" +
-                "              <td><input type=\"text\" name=\"con1\" size=\"20\"</td>\n" +
+                "              <td><input type=\"text\" name=\"con1\" size=\"20\"></td>\n" +
                 "          </tr>\n" +
                 "          <tr>\n" +
                 "              <td>Introduce tu teléfono:</td>\n" +
-                "              <td><input type=\"text\" name=\"tel\" size=\"20\"</td>\n" +
+                "              <td><input type=\"text\" name=\"tel\" size=\"20\"></td>\n" +
                 "          </tr>\n" +
                 "          <tr>\n" +
                 "              <td>Introduce tu edad:</td>\n" +
-                "              <td><input type=\"text\" name=\"edad\" size=\"20\"</td>\n" +
+                "              <td><input type=\"text\" name=\"edad\" size=\"20\"></td>\n" +
                 "          </tr>\n" +
                 "      </table>");
             out.println("<input type=\"submit\" value=\"Enviar\">");
